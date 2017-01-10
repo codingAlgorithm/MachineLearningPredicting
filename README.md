@@ -45,12 +45,16 @@ From Kaggle Team
 ### Data Handling
 
 Importing Data with Pandas
+
 Cleaning Data
+
 Data Analysis
 
 
 ### Machine learning Techniques:
+
 Logit Regression Model
+
 Basic Random Forest
 
 
