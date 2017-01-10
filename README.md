@@ -1,8 +1,10 @@
+
 #### MachineLearningPredicting
 
 Machine Learning: Predicting Titanic Survival 
 
 This project is a Kaggle competition and it provide me an scope of a competitive analysis in the field of data analytics and a pratice in using python for Kaggle's Data Science competitions.
+
 
 
 ### What the project's process :
@@ -13,12 +15,17 @@ binned by class,gender, and fare.
 Outputs prediction data with Passengerid, and survival.
 
 
+
 ### Dependencies:
 
 NumPy
+
 Python
+
 Pandas
+
 SciKit-Learn
+
 SciPy
 
 
@@ -34,11 +41,13 @@ This Kaggle Getting Started Competition provides an ideal starting place for peo
 
 From Kaggle Team 
 
+
 ### Data Handling
 
 Importing Data with Pandas
 Cleaning Data
 Data Analysis
+
 
 ### Machine learning Techniques:
 Logit Regression Model
