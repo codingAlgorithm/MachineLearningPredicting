@@ -69,6 +69,14 @@ def clean_data(df_in):
     return df_in, list(df_in)
 
 
+##Random forest classifier
+forest = LogisticRegression(n_jobs=3)
+forest = forest.fit(train_data[0::, 1::], train_data[0::, 0])
+output = forest.predict(test_data)
+
+prediction_file = open('output/logisticregression.csv', 'wt')
+prediction_file_object = csv.writer(prediction_file)
+
 # read in as data frame
 df = pd.read_csv('/Users/Janney/Downloads/test.csv', header=0)
 train_df = df.copy()
@@ -79,14 +87,6 @@ df_t = pd.read_csv('/Users/Janney/Downloads/test.csv', header=0)
 test_df = df_t.copy()
 [test_df, test_header] = clean_data(test_df)
 test_data = test_df.values
-
-##Random forest classifier
-forest = LogisticRegression(n_jobs=3)
-forest = forest.fit(train_data[0::, 1::], train_data[0::, 0])
-output = forest.predict(test_data)
-
-prediction_file = open('output/logisticregression.csv', 'wt')
-prediction_file_object = csv.writer(prediction_file)
 
 # output prediction from random forest model
 prediction_file_object.writerow(["PassengerId", "Survived"])
